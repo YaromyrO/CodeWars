@@ -26,9 +26,9 @@ public class OddEven {
         if(odd == 1){
             return integers[index];
         }else {
-            for (int i = 0; i < integers.length; i++) {
-                if(integers[i] % 2 != 0){
-                    result = integers[i];
+            for (int integer : integers) {
+                if (integer % 2 != 0) {
+                    result = integer;
                     break;
                 }
             }
