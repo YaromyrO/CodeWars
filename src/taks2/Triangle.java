@@ -1,5 +1,8 @@
 package taks2;
 
+//Implement a method that accepts 3 integer values a, b, c.
+// The method should return true if a triangle can be built with the sides of given length and false in any other case.
+
 public class Triangle {
 
     public static void main(String[] args) {
@@ -11,6 +14,6 @@ public class Triangle {
         if(a == b && a == c){
             return true;
         }
-        return (a * 2 >= c && b * 2 >= c) || (b * 2 >= a && c * 2 >= a) || (c * 2 >= b && a * 2 >= b);
+        return (a + b > c) && (a + c > b) && (c + b > a);
     }
 }
